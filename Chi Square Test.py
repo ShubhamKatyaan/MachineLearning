@@ -8,12 +8,7 @@ import numpy as np
 from scipy.stats import chi2_contingency 
   
 # defining the table 
-a1= [262]
-a2= [234]
-a3= [204]
-a4= [190]
-a5= [210]
-data = np.array([a1, a2, a3, a4, a5])
+data = [[ 262,234,204,190,210], [220,220,220,220,220]]
 stat, p, dof, expected = chi2_contingency(data) 
   
 # interpret p-value 
@@ -26,5 +21,5 @@ else:
     
     
 Output:
-p value is 1.0
+p value is 0.12953316432236356
 Independent (H0 holds true)
